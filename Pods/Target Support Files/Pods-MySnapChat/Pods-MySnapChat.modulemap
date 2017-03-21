@@ -1,0 +1,6 @@
+framework module Pods_MySnapChat {
+  umbrella header "Pods-MySnapChat-umbrella.h"
+
+  export *
+  module * { export * }
+}
