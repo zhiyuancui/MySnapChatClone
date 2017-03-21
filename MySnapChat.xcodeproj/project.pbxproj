@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4C00D93A84ADC7CF6D0A845D /* Pods_MySnapChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED9CF5BB649681AC69E4520 /* Pods_MySnapChat.framework */; };
 		8F30A3A61E8067E50011D429 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F30A3A51E8067E50011D429 /* GoogleService-Info.plist */; };
+		8F59CAC51E81A136004834A9 /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F59CAC41E81A136004834A9 /* RoundTextField.swift */; };
+		8F59CAC71E81A91C004834A9 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F59CAC61E81A91C004834A9 /* RoundedButton.swift */; };
 		8F80C51D1E7C5E1C00734B70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F80C51C1E7C5E1C00734B70 /* AppDelegate.swift */; };
 		8F80C51F1E7C5E1C00734B70 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F80C51E1E7C5E1C00734B70 /* CameraVC.swift */; };
 		8F80C5221E7C5E1C00734B70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F80C5201E7C5E1C00734B70 /* Main.storyboard */; };
@@ -25,6 +27,8 @@
 		0ED9CF5BB649681AC69E4520 /* Pods_MySnapChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySnapChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AD4FB095A964580FBF7F81A /* Pods-MySnapChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySnapChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MySnapChat/Pods-MySnapChat.debug.xcconfig"; sourceTree = "<group>"; };
 		8F30A3A51E8067E50011D429 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8F59CAC41E81A136004834A9 /* RoundTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundTextField.swift; sourceTree = "<group>"; };
+		8F59CAC61E81A91C004834A9 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		8F80C5191E7C5E1C00734B70 /* MySnapChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySnapChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F80C51C1E7C5E1C00734B70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F80C51E1E7C5E1C00734B70 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				8F80C5311E7C63E000734B70 /* PreviewView.swift */,
+				8F59CAC41E81A136004834A9 /* RoundTextField.swift */,
+				8F59CAC61E81A91C004834A9 /* RoundedButton.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -255,9 +261,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F59CAC51E81A136004834A9 /* RoundTextField.swift in Sources */,
 				8F80C5361E7C63E000734B70 /* PhotoCaptureDelegate.swift in Sources */,
 				8F80C51F1E7C5E1C00734B70 /* CameraVC.swift in Sources */,
 				8F80C5351E7C63E000734B70 /* CameraViewController.swift in Sources */,
+				8F59CAC71E81A91C004834A9 /* RoundedButton.swift in Sources */,
 				8F80C5341E7C63E000734B70 /* PreviewView.swift in Sources */,
 				8F80C53B1E7C71BD00734B70 /* CameraVCDelegate.swift in Sources */,
 				8F80C51D1E7C5E1C00734B70 /* AppDelegate.swift in Sources */,

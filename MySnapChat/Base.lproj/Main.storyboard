@@ -70,8 +70,139 @@
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="RdE-QY-L1U">
+            <objects>
+                <viewController id="WmO-P6-eOu" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GNz-vB-II2"/>
+                        <viewControllerLayoutGuide type="bottom" id="XPE-Rv-dea"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Hq-lG-eL4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="alc-Rq-1qh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.01176470588" green="0.66274509800000003" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zIv-xx-kQ9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.27450980392156865" green="0.59215686274509804" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TLs-Gk-y6r">
+                                <rect key="frame" x="75" y="130" width="225.5" height="64"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5MI-SO-fjb">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="EM7-Sa-3Zv"/>
+                                            <constraint firstAttribute="height" constant="64" id="bEj-1a-Qbd"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="myChat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaq-6t-zn1">
+                                        <rect key="frame" x="100" y="0.0" width="125.5" height="64"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QMf-ou-oNG" customClass="RoundTextField" customModule="MySnapChat" customModuleProvider="target">
+                                <rect key="frame" x="55" y="249" width="265" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="18c-hl-Cgh"/>
+                                    <constraint firstAttribute="width" constant="265" id="fzt-kW-gwR"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.76078431372549016" green="0.95294117647058818" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RAi-Bv-fB2" customClass="RoundTextField" customModule="MySnapChat" customModuleProvider="target">
+                                <rect key="frame" x="55" y="313" width="265" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="8Tc-tl-uJW"/>
+                                    <constraint firstAttribute="width" constant="265" id="lAb-li-G7Q"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.76078431369999999" green="0.95294117649999999" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ZT-30-4cj" customClass="RoundedButton" customModule="MySnapChat" customModuleProvider="target">
+                                <rect key="frame" x="55" y="375" width="265" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="YFp-OO-IBg"/>
+                                    <constraint firstAttribute="width" constant="265" id="jsN-88-jfn"/>
+                                </constraints>
+                                <state key="normal" title="Log in">
+                                    <color key="titleColor" red="0.27450980390000002" green="0.59215686270000001" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XPE-Rv-dea" firstAttribute="top" secondItem="zIv-xx-kQ9" secondAttribute="bottom" id="0px-b6-eKf"/>
+                            <constraint firstAttribute="trailing" secondItem="alc-Rq-1qh" secondAttribute="trailing" id="8Ef-T4-d7u"/>
+                            <constraint firstAttribute="trailing" secondItem="zIv-xx-kQ9" secondAttribute="trailing" id="8fp-w9-alO"/>
+                            <constraint firstItem="9ZT-30-4cj" firstAttribute="top" secondItem="RAi-Bv-fB2" secondAttribute="bottom" constant="20" id="Des-Yd-Bbp"/>
+                            <constraint firstItem="QMf-ou-oNG" firstAttribute="top" secondItem="TLs-Gk-y6r" secondAttribute="bottom" constant="55" id="LmY-oK-TpA"/>
+                            <constraint firstItem="zIv-xx-kQ9" firstAttribute="top" secondItem="7Hq-lG-eL4" secondAttribute="top" id="LzG-GH-JDe"/>
+                            <constraint firstItem="TLs-Gk-y6r" firstAttribute="top" secondItem="GNz-vB-II2" secondAttribute="bottom" constant="110" id="MtT-Ta-mRU"/>
+                            <constraint firstItem="QMf-ou-oNG" firstAttribute="centerX" secondItem="7Hq-lG-eL4" secondAttribute="centerX" id="O9z-bx-nad"/>
+                            <constraint firstItem="RAi-Bv-fB2" firstAttribute="centerX" secondItem="7Hq-lG-eL4" secondAttribute="centerX" id="RR6-fN-62p"/>
+                            <constraint firstItem="RAi-Bv-fB2" firstAttribute="top" secondItem="QMf-ou-oNG" secondAttribute="bottom" constant="22" id="VUc-LM-Yag"/>
+                            <constraint firstItem="TLs-Gk-y6r" firstAttribute="centerX" secondItem="7Hq-lG-eL4" secondAttribute="centerX" id="VrH-8p-nMo"/>
+                            <constraint firstItem="alc-Rq-1qh" firstAttribute="leading" secondItem="7Hq-lG-eL4" secondAttribute="leading" id="ZAQ-Yd-9Xf"/>
+                            <constraint firstItem="alc-Rq-1qh" firstAttribute="top" secondItem="7Hq-lG-eL4" secondAttribute="top" id="dKc-Ah-qaK"/>
+                            <constraint firstItem="9ZT-30-4cj" firstAttribute="centerX" secondItem="7Hq-lG-eL4" secondAttribute="centerX" id="ePe-7Z-iLY"/>
+                            <constraint firstItem="XPE-Rv-dea" firstAttribute="top" secondItem="alc-Rq-1qh" secondAttribute="bottom" id="jWs-IT-aCZ"/>
+                            <constraint firstItem="zIv-xx-kQ9" firstAttribute="leading" secondItem="7Hq-lG-eL4" secondAttribute="leading" id="jdk-QD-xxu"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yum-RH-8W2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="781.60000000000002" y="35.532233883058474"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="background" width="640" height="960"/>
         <image name="camera_icon_snap" width="29" height="24"/>
         <image name="createsnap_btn" width="30" height="30"/>
     </resources>
