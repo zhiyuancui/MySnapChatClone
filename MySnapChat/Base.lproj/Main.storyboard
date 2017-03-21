@@ -64,16 +64,17 @@
                         <outlet property="cameraButton" destination="6Vk-vH-j31" id="qon-7j-4He"/>
                         <outlet property="previewView" destination="rLw-y3-xKm" id="5oR-qz-CBK"/>
                         <outlet property="recordButton" destination="4sy-yV-cDU" id="bJq-ro-H5n"/>
+                        <segue destination="WmO-P6-eOu" kind="presentation" identifier="goToLogin" id="d3Q-8L-v61"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
         </scene>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="RdE-QY-L1U">
             <objects>
-                <viewController id="WmO-P6-eOu" sceneMemberID="viewController">
+                <viewController id="WmO-P6-eOu" customClass="LoginVC" customModule="MySnapChat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GNz-vB-II2"/>
                         <viewControllerLayoutGuide type="bottom" id="XPE-Rv-dea"/>
@@ -173,6 +174,9 @@
                                         <real key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="LoginTapped:" destination="WmO-P6-eOu" eventType="touchUpInside" id="cQx-fE-qzb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -195,6 +199,10 @@
                             <constraint firstItem="zIv-xx-kQ9" firstAttribute="leading" secondItem="7Hq-lG-eL4" secondAttribute="leading" id="jdk-QD-xxu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="QMf-ou-oNG" id="ohF-XZ-FbG"/>
+                        <outlet property="passwordField" destination="RAi-Bv-fB2" id="ZGF-zh-xU2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yum-RH-8W2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

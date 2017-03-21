@@ -11,6 +11,8 @@
 		8F30A3A61E8067E50011D429 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F30A3A51E8067E50011D429 /* GoogleService-Info.plist */; };
 		8F59CAC51E81A136004834A9 /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F59CAC41E81A136004834A9 /* RoundTextField.swift */; };
 		8F59CAC71E81A91C004834A9 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F59CAC61E81A91C004834A9 /* RoundedButton.swift */; };
+		8F59CAC91E81AC6D004834A9 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F59CAC81E81AC6D004834A9 /* LoginVC.swift */; };
+		8F59CACD1E81B06E004834A9 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F59CACC1E81B06E004834A9 /* AuthService.swift */; };
 		8F80C51D1E7C5E1C00734B70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F80C51C1E7C5E1C00734B70 /* AppDelegate.swift */; };
 		8F80C51F1E7C5E1C00734B70 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F80C51E1E7C5E1C00734B70 /* CameraVC.swift */; };
 		8F80C5221E7C5E1C00734B70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F80C5201E7C5E1C00734B70 /* Main.storyboard */; };
@@ -29,6 +31,8 @@
 		8F30A3A51E8067E50011D429 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8F59CAC41E81A136004834A9 /* RoundTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundTextField.swift; sourceTree = "<group>"; };
 		8F59CAC61E81A91C004834A9 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		8F59CAC81E81AC6D004834A9 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		8F59CACC1E81B06E004834A9 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		8F80C5191E7C5E1C00734B70 /* MySnapChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySnapChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F80C51C1E7C5E1C00734B70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F80C51E1E7C5E1C00734B70 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
@@ -64,6 +68,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8F59CACA1E81B039004834A9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8F59CACB1E81B056004834A9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8F59CACC1E81B06E004834A9 /* AuthService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		8F80C5101E7C5E1B00734B70 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +104,8 @@
 		8F80C51B1E7C5E1C00734B70 /* MySnapChat */ = {
 			isa = PBXGroup;
 			children = (
+				8F59CACB1E81B056004834A9 /* Services */,
+				8F59CACA1E81B039004834A9 /* Model */,
 				8F80C5391E7C719400734B70 /* Protocols */,
 				8F80C5381E7C641A00734B70 /* Controller */,
 				8F80C5371E7C641400734B70 /* View */,
@@ -115,6 +136,7 @@
 				8F80C5321E7C63E000734B70 /* CameraViewController.swift */,
 				8F80C5331E7C63E000734B70 /* PhotoCaptureDelegate.swift */,
 				8F80C51E1E7C5E1C00734B70 /* CameraVC.swift */,
+				8F59CAC81E81AC6D004834A9 /* LoginVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -265,6 +287,8 @@
 				8F80C5361E7C63E000734B70 /* PhotoCaptureDelegate.swift in Sources */,
 				8F80C51F1E7C5E1C00734B70 /* CameraVC.swift in Sources */,
 				8F80C5351E7C63E000734B70 /* CameraViewController.swift in Sources */,
+				8F59CAC91E81AC6D004834A9 /* LoginVC.swift in Sources */,
+				8F59CACD1E81B06E004834A9 /* AuthService.swift in Sources */,
 				8F59CAC71E81A91C004834A9 /* RoundedButton.swift in Sources */,
 				8F80C5341E7C63E000734B70 /* PreviewView.swift in Sources */,
 				8F80C53B1E7C71BD00734B70 /* CameraVCDelegate.swift in Sources */,
